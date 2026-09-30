@@ -16,4 +16,5 @@ scipy
 Flask
 Flask-Cors
 gdown
+py7zr
 -e .
