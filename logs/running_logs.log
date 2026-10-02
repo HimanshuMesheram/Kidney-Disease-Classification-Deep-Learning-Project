@@ -48,3 +48,53 @@
 [2026-09-30 12:31:53,419: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2026-09-30 18:33:31,467: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-09-30 18:33:31,469: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-09-30 18:33:31,491: INFO: common: created directory at: artifacts]
+[2026-09-30 18:33:31,491: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-09-30 18:33:37,545: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-02 09:45:15,176: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-02 09:45:15,196: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 09:45:15,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 09:45:15,207: INFO: common: created directory at: artifacts]
+[2026-10-02 09:45:15,207: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-02 09:45:15,207: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 09:46:28,487: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 09:48:33,768: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-02 09:48:33,768: INFO: main: *******************]
+[2026-10-02 09:48:33,768: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-02 09:48:33,784: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 09:48:33,784: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 09:48:33,784: INFO: common: created directory at: artifacts]
+[2026-10-02 09:48:33,784: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-02 09:48:33,784: ERROR: main: name 'Path' is not defined]
+Traceback (most recent call last):
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 21, in <module>
+    prepare_base_model.main()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\config\configuration.py", line 39, in get_prepare_base_model_config
+    root_dir=Path(config.root_dir),
+NameError: name 'Path' is not defined
+[2026-10-02 09:53:31,799: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-02 09:53:31,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 09:53:31,799: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 09:53:31,799: INFO: common: created directory at: artifacts]
+[2026-10-02 09:53:31,799: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-02 09:53:31,799: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 09:54:51,201: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 09:56:51,315: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-02 09:56:51,315: INFO: main: *******************]
+[2026-10-02 09:56:51,315: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-02 09:56:51,315: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 09:56:51,315: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 09:56:51,315: INFO: common: created directory at: artifacts]
+[2026-10-02 09:56:51,315: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-02 09:56:51,670: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-02 09:56:51,840: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
