@@ -65,23 +65,27 @@ open up you local host and port
 ### dagshub
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+Set the tracking configuration in PowerShell (these variables apply to the current
+terminal session):
 
-Run this to export as env variables:
-
-```bash
-
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
-
-export MLFLOW_TRACKING_USERNAME=entbappy 
-
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
-
+```powershell
+$env:MLFLOW_TRACKING_URI = "https://dagshub.com/HimanshuMesheram/Kidney-Disease-Classification-Deep-Learning-Project.mlflow"
+$env:MLFLOW_TRACKING_USERNAME = "HimanshuMesheram"
+$env:MLFLOW_TRACKING_PASSWORD = "529311855bdd83e25b6c84a53db6924d7b206ddf"
 ```
 
+In Bash, use:
+
+```bash
+set MLFLOW_TRACKING_URI="https://dagshub.com/HimanshuMesheram/Kidney-Disease-Classification-Deep-Learning-Project.mlflow"
+
+set MLFLOW_TRACKING_USERNAME="HimanshuMesheram"
+
+set MLFLOW_TRACKING_PASSWORD="529311855bdd83e25b6c84a53db6924d7b206ddf"
+```
+
+Use a DagsHub access token for the password. Do not commit tokens or put them
+directly in source code; if a token was exposed, revoke it and create a new one.
 
 ### DVC cmd
 
@@ -179,5 +183,4 @@ DVC
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = simple-app
-
 

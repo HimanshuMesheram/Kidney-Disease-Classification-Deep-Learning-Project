@@ -131,3 +131,200 @@ x==========x]
 [2026-10-02 11:52:02,582: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2026-10-02 13:48:09,765: INFO: common: yaml file: D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml loaded successfully]
+[2026-10-02 13:48:09,767: INFO: common: yaml file: D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml loaded successfully]
+[2026-10-02 13:48:09,769: INFO: common: created directory at: artifacts]
+[2026-10-02 13:48:09,770: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-02 13:48:09,772: INFO: 4091068710: Downloading data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 13:49:41,121: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-02 13:49:41,121: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-02 13:49:41,683: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-02 13:49:41,685: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 13:49:41,685: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 13:49:41,685: INFO: common: created directory at: artifacts]
+[2026-10-02 13:49:41,685: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-02 13:49:41,685: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 13:50:52,011: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 13:52:57,974: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-02 13:52:57,974: INFO: main: *******************]
+[2026-10-02 13:52:57,974: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-02 13:52:57,974: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 13:52:57,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 13:52:57,974: INFO: common: created directory at: artifacts]
+[2026-10-02 13:52:57,974: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-02 13:52:58,454: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-02 13:52:58,676: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-02 13:52:58,676: INFO: main: *******************]
+[2026-10-02 13:52:58,677: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-02 13:52:58,678: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 13:52:58,679: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 13:52:58,679: INFO: common: created directory at: artifacts]
+[2026-10-02 13:52:58,680: INFO: common: created directory at: artifacts\training]
+[2026-10-02 13:55:06,954: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-02 13:55:06,954: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-02 13:55:07,641: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-02 13:55:07,642: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 13:55:07,642: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 13:55:07,642: INFO: common: created directory at: artifacts]
+[2026-10-02 13:55:07,642: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-02 13:55:07,642: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 13:56:13,312: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-02 13:58:19,159: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-02 13:58:19,159: INFO: main: *******************]
+[2026-10-02 13:58:19,159: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-02 13:58:19,159: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 13:58:19,159: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 13:58:19,159: INFO: common: created directory at: artifacts]
+[2026-10-02 13:58:19,159: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-02 13:58:19,595: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-02 13:58:19,849: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-02 13:58:19,849: INFO: main: *******************]
+[2026-10-02 13:58:19,850: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-02 13:58:19,852: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 13:58:19,854: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 13:58:19,854: INFO: common: created directory at: artifacts]
+[2026-10-02 13:58:19,855: INFO: common: created directory at: artifacts\training]
+[2026-10-02 15:34:48,188: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-02 18:16:24,834: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 18:16:24,838: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 18:16:24,840: INFO: common: created directory at: artifacts]
+[2026-10-02 18:19:48,334: INFO: common: json file saved at: scores.json]
+[2026-10-02 18:19:51,775: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-02 18:19:52,369: INFO: builder_impl: Assets written to: C:\Users\himan\AppData\Local\Temp\tmpb5tw8uds\model\data\model\assets]
+[2026-10-02 18:26:49,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-02 18:26:49,689: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-02 18:26:49,698: INFO: common: created directory at: artifacts]
+[2026-10-02 18:30:02,435: INFO: common: json file saved at: scores.json]
+[2026-10-02 18:30:05,401: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-02 18:30:05,858: INFO: builder_impl: Assets written to: C:\Users\himan\AppData\Local\Temp\tmpsyk9kyxr\model\data\model\assets]
+[2026-10-03 11:35:27,664: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-03 11:35:27,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 11:35:27,670: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 11:35:27,670: INFO: common: created directory at: artifacts]
+[2026-10-03 11:35:27,670: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-03 11:35:27,670: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-03 11:36:10,172: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16TbJhuodr4ClS30eqB0rZHDjIRNlLjQP/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-10-03 11:38:17,095: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-03 11:39:28,009: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 11:39:28,009: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 11:39:29,225: INFO: stage_02_prepare_base_model: *******************]
+[2026-10-03 11:39:29,225: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-03 11:39:29,227: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 11:39:29,227: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 11:39:29,227: INFO: common: created directory at: artifacts]
+[2026-10-03 11:39:29,227: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-03 11:39:29,805: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-03 11:39:30,058: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-03 11:39:38,069: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 11:39:38,069: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 11:39:38,824: INFO: stage_03_model_training: *******************]
+[2026-10-03 11:39:38,824: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2026-10-03 11:39:38,824: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 11:39:38,834: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 11:39:38,834: INFO: common: created directory at: artifacts]
+[2026-10-03 11:39:38,834: INFO: common: created directory at: artifacts\training]
+[2026-10-03 13:20:49,134: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-03 13:20:57,885: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 13:20:57,885: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 13:20:59,832: INFO: stage_04_model_evaluation: *******************]
+[2026-10-03 13:20:59,832: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-03 13:20:59,832: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 13:20:59,832: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 13:20:59,832: INFO: common: created directory at: artifacts]
+[2026-10-03 13:23:55,932: INFO: common: json file saved at: scores.json]
+[2026-10-03 13:23:55,933: INFO: common: json file saved at: scores.json]
+[2026-10-03 13:23:55,933: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-10-03 15:38:05,979: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 15:38:05,979: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 15:38:07,842: INFO: stage_04_model_evaluation: *******************]
+[2026-10-03 15:38:07,842: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-03 15:38:07,845: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 15:38:07,845: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 15:38:07,845: INFO: common: created directory at: artifacts]
+[2026-10-03 15:41:13,963: INFO: common: json file saved at: scores.json]
+[2026-10-03 15:41:13,965: INFO: common: json file saved at: scores.json]
+[2026-10-03 15:41:15,220: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-03 15:41:15,836: INFO: builder_impl: Assets written to: C:\Users\himan\AppData\Local\Temp\tmpl2q26zn9\model\data\model\assets]
+[2026-10-03 15:41:27,703: ERROR: stage_04_model_evaluation: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2026-10-03 15:44:21,463: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 15:44:21,463: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 15:44:23,064: INFO: stage_04_model_evaluation: *******************]
+[2026-10-03 15:44:23,064: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-03 15:44:23,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 15:44:23,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 15:44:23,064: INFO: common: created directory at: artifacts]
+[2026-10-03 15:47:24,711: INFO: common: json file saved at: scores.json]
+[2026-10-03 15:47:24,711: INFO: common: json file saved at: scores.json]
+[2026-10-03 15:47:25,907: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-03 15:47:26,455: INFO: builder_impl: Assets written to: C:\Users\himan\AppData\Local\Temp\tmpc7e7cmyb\model\data\model\assets]
+[2026-10-03 15:47:36,023: ERROR: stage_04_model_evaluation: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'

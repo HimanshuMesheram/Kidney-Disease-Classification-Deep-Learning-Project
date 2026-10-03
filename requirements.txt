@@ -1,9 +1,12 @@
 tensorflow==2.12.0
+setuptools<81
 pandas 
 dvc
 mlflow==2.2.2
 notebook
-numpy
+numpy<1.24
+protobuf<5
+ml-dtypes<0.3
 matplotlib
 seaborn
 python-box==6.0.2
