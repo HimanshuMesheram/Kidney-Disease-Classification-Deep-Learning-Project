@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Deep%20Learning/DL%20Projects/Kidney-Disease-Classification-Deep-Learning-Project/mlruns/0/278dc3a5e4914caea9f6a6fef6073280/artifacts
+end_time: 1791025738824
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 278dc3a5e4914caea9f6a6fef6073280
+run_name: lyrical-dolphin-358
+run_uuid: 278dc3a5e4914caea9f6a6fef6073280
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791025728172
+status: 4
+tags: []
+user_id: himan

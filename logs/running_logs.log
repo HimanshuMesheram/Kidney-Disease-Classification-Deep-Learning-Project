@@ -328,3 +328,420 @@ Traceback (most recent call last):
   File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
     from distutils._modified import newer
 ModuleNotFoundError: No module named 'distutils._modified'
+[2026-10-03 16:05:33,920: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:05:33,920: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:06:24,741: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:06:24,741: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:07:22,706: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:07:22,706: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:07:40,534: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:07:40,534: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:07:41,059: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8081]
+[2026-10-03 16:07:41,059: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 16:07:41,207: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 16:07:41] "GET / HTTP/1.1" 200 -]
+[2026-10-03 16:08:45,835: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:08:45,835: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:08:46,329: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.144:8081]
+[2026-10-03 16:08:46,329: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 16:08:53,242: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 16:08:53] "GET / HTTP/1.1" 200 -]
+[2026-10-03 16:09:00,934: INFO: _internal: 192.168.1.144 - - [03/Oct/2026 16:09:00] "GET / HTTP/1.1" 200 -]
+[2026-10-03 16:09:19,219: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\decorator.py", line 135, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-10-03 16:09:19,230: INFO: _internal: 192.168.1.144 - - [03/Oct/2026 16:09:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-03 16:14:56,923: INFO: _internal: 192.168.1.144 - - [03/Oct/2026 16:14:56] "GET / HTTP/1.1" 200 -]
+[2026-10-03 16:15:38,891: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 16:15:38] "GET / HTTP/1.1" 200 -]
+[2026-10-03 16:15:45,997: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\decorator.py", line 135, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-10-03 16:15:46,005: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 16:15:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-03 16:26:15,878: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:26:15,878: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:26:18,445: INFO: stage_04_model_evaluation: *******************]
+[2026-10-03 16:26:18,445: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-03 16:26:18,448: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 16:26:18,450: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 16:26:18,450: INFO: common: created directory at: artifacts]
+[2026-10-03 16:29:14,793: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:29:14,793: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:29:14,793: ERROR: stage_04_model_evaluation: [WinError 3] The system cannot find the path specified: 'S:\\']
+Traceback (most recent call last):
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\components\model_evaluation_mlflow.py", line 60, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\fluent.py", line 278, in start_run
+    client = MlflowClient()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\client.py", line 69, in __init__
+    self._tracking_client = TrackingServiceClient(final_tracking_uri)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 51, in __init__
+    self.store
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 55, in store
+    return utils._get_store(self.tracking_uri)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\utils.py", line 217, in _get_store
+    return _tracking_store_registry.get_store(store_uri, artifact_uri)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\registry.py", line 39, in get_store
+    return self._get_store_with_resolved_uri(resolved_store_uri, artifact_uri)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\registry.py", line 49, in _get_store_with_resolved_uri
+    return builder(store_uri=resolved_store_uri, artifact_uri=artifact_uri)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\utils.py", line 142, in _get_file_store
+    return FileStore(store_uri, store_uri)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\store\tracking\file_store.py", line 160, in __init__
+    self._create_default_experiment()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\store\tracking\file_store.py", line 166, in _create_default_experiment
+    mkdir(self.root_directory)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\utils\file_utils.py", line 121, in mkdir
+    raise e
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\utils\file_utils.py", line 118, in mkdir
+    os.makedirs(target)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'S:\\'
+[2026-10-03 16:30:08,285: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:30:08,285: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:30:10,505: INFO: stage_04_model_evaluation: *******************]
+[2026-10-03 16:30:10,505: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-03 16:30:10,505: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 16:30:10,505: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 16:30:10,505: INFO: common: created directory at: artifacts]
+[2026-10-03 16:33:20,318: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:33:20,318: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:33:21,560: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-03 16:33:22,122: INFO: builder_impl: Assets written to: C:\Users\himan\AppData\Local\Temp\tmprq0dd0bh\model\data\model\assets]
+[2026-10-03 16:33:33,873: ERROR: stage_04_model_evaluation: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2026-10-03 16:35:41,074: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:35:41,074: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:35:42,554: INFO: stage_04_model_evaluation: *******************]
+[2026-10-03 16:35:42,554: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-03 16:35:42,554: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 16:35:42,554: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 16:35:42,554: INFO: common: created directory at: artifacts]
+[2026-10-03 16:38:47,881: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:38:47,883: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:38:49,265: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-03 16:38:49,745: INFO: builder_impl: Assets written to: C:\Users\himan\AppData\Local\Temp\tmp2o9jz5jx\model\data\model\assets]
+[2026-10-03 16:38:58,824: ERROR: stage_04_model_evaluation: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2026-10-03 16:41:14,612: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:41:14,613: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:41:16,250: INFO: stage_04_model_evaluation: *******************]
+[2026-10-03 16:41:16,250: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-03 16:41:16,252: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-03 16:41:16,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-03 16:41:16,253: INFO: common: created directory at: artifacts]
+[2026-10-03 16:44:22,762: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:44:22,763: INFO: common: json file saved at: scores.json]
+[2026-10-03 16:44:24,186: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-03 16:44:24,679: INFO: builder_impl: Assets written to: C:\Users\himan\AppData\Local\Temp\tmp3rot0c61\model\data\model\assets]
+[2026-10-03 16:44:33,648: INFO: dir_util: creating D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\mlruns\0\92e3dbcf41744998845a32e1b1f844e5\artifacts\model\data]
+[2026-10-03 16:44:33,648: INFO: dir_util: creating D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\mlruns\0\92e3dbcf41744998845a32e1b1f844e5\artifacts\model\data\model]
+[2026-10-03 16:44:33,648: INFO: dir_util: creating D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\mlruns\0\92e3dbcf41744998845a32e1b1f844e5\artifacts\model\data\model\assets]
+[2026-10-03 16:44:33,648: INFO: dir_util: creating D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\mlruns\0\92e3dbcf41744998845a32e1b1f844e5\artifacts\model\data\model\variables]
+[2026-10-03 16:44:33,712: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-10-03 16:46:50,327: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 16:46:50,327: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 16:46:50,798: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.144:8081]
+[2026-10-03 16:46:50,798: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 16:47:02,182: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 16:47:02] "GET / HTTP/1.1" 200 -]
+[2026-10-03 16:47:19,467: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\decorator.py", line 135, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-10-03 16:47:19,469: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 16:47:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-03 17:00:31,358: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:00:31,358: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:00:32,155: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.144:8081]
+[2026-10-03 17:00:32,155: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 17:00:43,992: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:00:43] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:00:48,898: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\decorator.py", line 135, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-10-03 17:00:48,908: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:00:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-03 17:00:53,999: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:00:53] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:01:01,351: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\decorator.py", line 135, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-10-03 17:01:01,353: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:01:01] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-03 17:07:01,280: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:07:01,280: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:08:02,524: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:08:02,524: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:08:02,649: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:08:02,649: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:08:03,173: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.144:8081]
+[2026-10-03 17:08:03,173: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 17:08:21,626: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:08:21] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:09:13,513: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:09:13] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:10:17,019: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:10:17] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:10:18,958: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:10:18,958: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:10:19,488: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.144:8081]
+[2026-10-03 17:10:19,488: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 17:10:47,962: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:10:47] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:10:57,715: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:10:57] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:11:12,578: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:11:12,578: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:12:06,066: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:12:06,067: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:12:40,854: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:12:40,854: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:12:41,387: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://192.168.1.144:8082]
+[2026-10-03 17:12:41,387: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 17:12:43,855: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:12:43] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:12:49,273: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:12:49] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 17:15:24,155: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:15:24] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:15:31,760: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\flask_cors\decorator.py", line 135, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\Deep Learning\DL Projects\Kidney-Disease-Classification-Deep-Learning-Project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model_path = Path(__file__).resolve().parents[3] / "artifacts" / "training" / "model.h5"
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\himan\miniconda3\envs\kidney-disease-classification\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-10-03 17:15:31,762: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:15:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-03 17:54:55,673: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:54:55] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:55:06,207: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:55:06] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:55:20,267: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:55:20] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:55:28,105: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:55:28,105: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:56:10,824: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 17:56:10,824: INFO: utils: NumExpr defaulting to 16 threads.]
+[2026-10-03 17:56:11,976: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://192.168.1.144:8081]
+[2026-10-03 17:56:12,005: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-03 17:56:24,450: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:56:24] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:56:25,201: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:56:25] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:56:30,699: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:56:30] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 17:57:09,604: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:57:09] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:57:23,192: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:57:23] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:57:24,516: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:57:24] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:57:25,048: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:57:25] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:57:46,827: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:57:46] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 17:57:53,386: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:57:53] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:58:03,791: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:03] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 17:58:13,602: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:13] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 17:58:20,772: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002205FA9F880> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2026-10-03 17:58:20,784: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:20] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 17:58:22,309: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:22] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:58:23,412: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:23] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:58:23,617: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:23] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:58:24,345: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:24] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:58:32,500: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002205FA9F9A0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2026-10-03 17:58:32,511: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:58:32] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 17:59:25,961: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:59:25] "GET / HTTP/1.1" 200 -]
+[2026-10-03 17:59:34,968: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 17:59:34] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 18:00:23,409: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 18:00:23] "GET / HTTP/1.1" 200 -]
+[2026-10-03 18:00:24,170: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 18:00:24] "GET / HTTP/1.1" 200 -]
+[2026-10-03 18:00:59,258: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 18:00:59] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 18:01:29,821: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 18:01:29] "GET / HTTP/1.1" 200 -]
+[2026-10-03 18:01:56,488: INFO: _internal: 127.0.0.1 - - [03/Oct/2026 18:01:56] "POST /predict HTTP/1.1" 200 -]
+[2026-10-03 18:04:08,516: INFO: utils: Note: NumExpr detected 18 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.]
+[2026-10-03 18:04:08,516: INFO: utils: NumExpr defaulting to 16 threads.]

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Deep%20Learning/DL%20Projects/Kidney-Disease-Classification-Deep-Learning-Project/mlruns/0/b8ffba27497b4301b903ddbac42351b4/artifacts
+end_time: 1791025413871
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b8ffba27497b4301b903ddbac42351b4
+run_name: marvelous-turtle-691
+run_uuid: b8ffba27497b4301b903ddbac42351b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791025400603
+status: 4
+tags: []
+user_id: himan
